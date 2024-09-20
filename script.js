@@ -295,7 +295,12 @@ function saveImg() {
 
     // Dessiner uniquement les lignes dans la zone englobante sur le nouveau canvas
     if (backgroundActive) {
-        croppedContext.fillStyle = '#fff';
+        const backgroundColor = body.style.backgroundColor;
+        if (backgroundColor === 'gray') {
+            croppedContext.fillStyle = '#333';
+        } else {
+            croppedContext.fillStyle = '#fff';
+        }
         croppedContext.fillRect(0, 0, canvas.width, canvas.height);
     }
     for (let i = 0; i < drawings.length; i++) {
