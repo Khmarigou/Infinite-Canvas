@@ -106,6 +106,13 @@ function drawGrid() {
     }
 }
 
+function drawPreviewDot(x, y) {
+    context.beginPath();
+    context.fillStyle = '#AAA';
+    context.arc(x, y, 5, 0, 2 * Math.PI);
+    context.fill();
+}
+
 function redrawCanvas() {
     // set the canvas to the size of the window
     canvas.width = document.body.clientWidth;
@@ -183,13 +190,19 @@ function onMouseMove(event) {
     const scaledX = toTrueX(cursorX);
     const scaledY = toTrueY(cursorY);
 
+    let closestX = Math.round(scaledX / gridSpacing) * gridSpacing
+    let closestY = Math.round(scaledY / gridSpacing) * gridSpacing
+
+    redrawCanvas();
+    drawPreviewDot(closestX, closestY);
+
     if (leftMouseDown) {
         if(startLine) {
             endLine = {
                 x0: startLine.x0,
                 y0: startLine.y0,
-                x1: Math.round(scaledX / gridSpacing) * gridSpacing,
-                y1: Math.round(scaledY / gridSpacing) * gridSpacing
+                x1: closestX,
+                y1: closestY
             }
             redrawCanvas();
             drawLine(toScreenX(endLine.x0), toScreenY(endLine.y0), toScreenX(endLine.x1), toScreenY(endLine.y1), mainColor);
