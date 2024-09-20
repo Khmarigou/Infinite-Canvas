@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Canvas</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <canvas id="canvas">Your browser does not support HTML5 canvas</canvas>
+    <div class="toolBar">
+        <button class="toolButton" id="save" onclick="saveImg();">Save</button>
+        <button class="toolButton" id="backgroundButton" onclick="changeBackground();">Background Off</button>
+        <button class="toolButton" id="clear" onclick="clearCanvas();">Clear</button>
+        <button class="toolButton" id="theme" onclick="changeTheme();">Switch theme</button>
+        <button class="colorChange selectedColor" id="black" onclick="setMainColor('black');"></button>
+        <button class="colorChange" id="red" onclick="setMainColor('red');"></button>
+        <button class="colorChange" id="green" onclick="setMainColor('green');"></button>
+        <button class="colorChange" id="blue" onclick="setMainColor('blue');"></button>
+        <button class="colorChange" id="yellow" onclick="setMainColor('yellow');"></button>
+        <button class="colorChange" id="purple" onclick="setMainColor('purple');"></button>
+        <button class="colorChange" id="orange" onclick="setMainColor('orange');"></button>
+        <button class="colorChange" id="pink" onclick="setMainColor('pink');"></button>
+        <button class="colorChange" id="brown" onclick="setMainColor('brown');"></button>
+        <button class="colorChange" id="white" onclick="setMainColor('white');"></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
