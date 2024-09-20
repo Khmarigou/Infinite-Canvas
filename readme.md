@@ -11,7 +11,7 @@ You can run it in a node.js serveur with :
 ```
 node app.js
 ```
-and access at your [localhost](http://localhost:3000*
+and access at your [localhost](http://localhost:3000)
 
 Or you can use :
 ```
