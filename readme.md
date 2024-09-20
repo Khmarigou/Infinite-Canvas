@@ -6,12 +6,12 @@
 
 ## Use
 
-You can move by using the right click of your mouse. Juste press the left button to start a line and release when you where you want to finish the line, the lines will automatically be align with the grid. \n
-You can choose the color of the line on the top by clicking the color wanted. \n
-The **Switch theme** button change the background with some darker color for using white lines. \n
+You can move by using the right click of your mouse. Juste press the left button to start a line and release when you where you want to finish the line, the lines will automatically be align with the grid.  
+You can choose the color of the line on the top by clicking the color wanted.  
+The **Switch theme** button change the background with some darker color for using white lines.  
 The **Clear** button clear all the canvas. ⚠️ this action is definitive.
-The **Background off/on** button tell if the background need to be downloaded with the image. When the button is red the image is a png without any background, when it's green it will keep a white background. \n
-The **Save** button saves the image in png, only the part with drawings will be downloaded, not all the canvas. *This not work with the python version, see below*\n
+The **Background off/on** button tell if the background need to be downloaded with the image. When the button is red the image is a png without any background, when it's green it will keep a white background.  
+The **Save** button saves the image in png, only the part with drawings will be downloaded, not all the canvas. *This not work with the python version, see below*  
 
 Have fun !
 
