@@ -295,6 +295,7 @@ function saveImg() {
 
     // Dessiner uniquement les lignes dans la zone englobante sur le nouveau canvas
     if (backgroundActive) {
+        const body = document.querySelector('body');
         const backgroundColor = body.style.backgroundColor;
         if (backgroundColor === 'gray') {
             croppedContext.fillStyle = '#333';
